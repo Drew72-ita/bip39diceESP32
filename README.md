@@ -24,7 +24,7 @@ At this early stage, it is designed specifically for the [LilyGO® TTGO T-Displa
 - Supports **12-word** or **24-word** BIP39 mnemonics.
 - Calculates the 12th or 24th word according to the BIP39 standard (only the required entropy from the last throw will be used).
 - Displays the final **12-word** or **24-word** mnemonic directly on the screen at the end.
-- All processing is done **offline** on the ESP32 device.
+- All processing is done offline on the ESP32 device (the USB connection is used only for power).
 - Lower button is used to advance, upper button is used to select (see demo in the video below)
 - Selecting the X "face" of the dice will go back to the previous dice (except for d8).
 -  **For demonstration purposes only**, keeping the **select button** pressed will automatically simulate random dice rolls and advance through the process.
