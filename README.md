@@ -1,4 +1,4 @@
-# BIP39dice
+# BIP39dice on ESP32
 
 <table>
 <tr>
