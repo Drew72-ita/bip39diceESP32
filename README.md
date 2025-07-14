@@ -26,6 +26,7 @@ At this early stage, it is designed specifically for the [LilyGO® TTGO T-Displa
 - Displays the final **12-word** or **24-word** mnemonic directly on the screen at the end.
 - All processing is done **offline** on the ESP32 device.
 - Lower button is used to advance, upper button is used to select (see demo in the video below)
+- Selecting the X "face" of the dice will go back to the previous dice (except for d8).
 -  **For demonstration purposes only**, keeping the **select button** pressed will automatically simulate random dice rolls and advance through the process.
 
 (*) The dice are read in a fixed order: first the 8-sided die, followed by the two hexadecimal (or 16-sided) dice, which must be of two different colors. To ensure randomness and avoid human bias, the order in which the colored dice are read must be predefined. For example, in the demo video, the white die is always read first, followed by the black one.
