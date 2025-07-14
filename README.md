@@ -1,7 +1,18 @@
 # BIP39dice
 
+<table>
+<tr>
+<td width="300">
+<img src="images/LILYGO-T-DISPLAY.jpg" alt="LILYGO T-Display board" width="100%">
+</td>
+<td>
+
 **BIP39dice** is a simple ESP32-based tool to securely generate BIP39 mnemonic phrases using physical dice rolls.  
 At this early stage, it is designed specifically for the [LilyGO® TTGO T-Display 1.14 Inch LCD](https://lilygo.cc/products/lilygo%C2%AE-ttgo-t-display-1-14-inch-lcd-esp32-control-board).
+
+</td>
+</tr>
+</table>
 
 ---
 
