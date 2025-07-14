@@ -7,13 +7,18 @@ It is designed specifically for the [LilyGO® TTGO T-Display 1.14 Inch LCD ESP32
 
 ## What it does
 
-- Allows you to enter entropy using either **hexadecimal dice** (values 0–15) or **standard 16-sided dice**.
+- Allows you to enter entropy using one of the following two methods:  
+  – An 8-sided die (**d8**) combined with **two hexadecimal dice** (values 0–15, e.g. standard 16-sided dice labeled 0–F), of two **different colors**.  
+  – An 8-sided die (**d8**) combined with **two 16-sided dice**, also of **two different colors**.  
+  The two colored dice are read in a fixed order (e.g. white first, then black) to avoid human bias and maximize entropy.
 - Supports **12-word** or **24-word** BIP39 mnemonic phrase generation.
 - Calculates and appends the appropriate **checksum bit(s)** according to the [BIP39 standard](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki), and derives the final 12th or 24th valid word.
-- Displays the generated phrase and its **BIP32 fingerprint** directly on the screen.
+- Displays the generated mnemonic directly on the screen.
 - All processing is done **offline** on the ESP32 device.
 
-Quickd demo:
+Note: To avoid introducing human bias and reducing entropy, the order of the two dice (hexadecimal or 16-sided) must be predetermined. It is recommended to use two dice of different colors—for example, in the demo video, the white die is always read first, followed by the black one.
+
+Quick demo:
 [![Watch the demo](images/YTdemo010.jpg)](https://youtu.be/SdviQpSpwHA)
 
 
