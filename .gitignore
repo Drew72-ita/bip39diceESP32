@@ -1,0 +1,29 @@
+# Arduino build files
+*.ino.*
+*.hex
+*.elf
+*.bin
+*.eep
+*.map
+*.d
+*.o
+*.a
+
+# Arduino sketchbook and temporary files
+*.log
+*.tmp
+*.bak
+
+# macOS metadata
+.DS_Store
+
+# Arduino IDE settings (optional, user-specific)
+.vscode/
+*.code-workspace
+
+# Platform-specific
+*.pyc
+__pycache__/
+
+# Arduino libraries installed manually (optional)
+libraries/
