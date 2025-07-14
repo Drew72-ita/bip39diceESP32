@@ -18,16 +18,18 @@ At this early stage, it is designed specifically for the [LilyGO® TTGO T-Displa
 
 ## What it does
 
-- Supports **12-word** or **24-word** [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) mnemonics.
-- Allows you to generate random BIP39 words using one of the following two methods:  
+- Allows you to generate random [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) words using one of the following two methods (*):  
   – An 8-sided die (**d8**) combined with **two hexadecimal dice** (0–9, A–F), of **two different colors**.  
   – An 8-sided die (**d8**) combined with **two 16-sided dice**, also of **two different colors**.  
-  The two colored dice are read in a fixed order (e.g., white first, then black) to avoid human bias and maximize entropy.
+- Supports **12-word** or **24-word** BIP39 mnemonics.
 - Calculates the 12th or 24th word according to the BIP39 standard (only the required entropy from the last throw will be used).
 - Displays the final **12-word** or **24-word** mnemonic directly on the screen at the end.
 - All processing is done **offline** on the ESP32 device.
 - Lower button is used to advance, upper button is used to select (see demo in the video below)
 -  **For demonstration purposes only**, keeping the **select button** pressed will automatically simulate random dice rolls and advance through the process.
+
+(*) The dice are read in a fixed order: first the 8-sided die, followed by the two hexadecimal (or 16-sided) dice, which must be of two different colors. To ensure randomness and avoid human bias, the order in which the colored dice are read must be predefined. For example, in the demo video, the white die is always read first, followed by the black one.
+
 
 Quick demo (links to YouTube video):
 
