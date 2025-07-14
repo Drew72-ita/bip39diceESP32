@@ -1,0 +1,54 @@
+# BIP39dice
+
+**BIP39dice** is a simple ESP32-based tool to securely generate BIP39 mnemonic phrases using physical dice rolls.  
+It is designed specifically for the [LilyGO® TTGO T-Display 1.14 Inch LCD ESP32 Control Board](https://lilygo.cc/products/lilygo%C2%AE-ttgo-t-display-1-14-inch-lcd-esp32-control-board) and is in an early experimental stage.
+
+---
+
+## What it does
+
+- Allows you to enter entropy using either **hexadecimal dice** (values 0–15) or **standard 16-sided dice**.
+- Supports **12-word** or **24-word** BIP39 mnemonic phrase generation.
+- Calculates and appends the appropriate **checksum bit(s)** according to the [BIP39 standard](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki), and derives the final 12th or 24th valid word.
+- Displays the generated phrase and its **BIP32 fingerprint** directly on the screen.
+- All processing is done **offline** on the ESP32 device.
+
+Quickd demo:
+[![Watch the demo](images/YTdemo010.jpg)](https://youtu.be/SdviQpSpwHA)
+
+
+---
+
+## Notes
+
+- This project is currently tailored **only** for the **LilyGO TTGO T-Display** board.
+- More boards and features may be supported in future versions.
+
+---
+
+## Requirements
+
+This project was developed using the **Arduino IDE**.
+
+### Arduino IDE setup:
+
+1. Install ESP32 support:
+   - **Tools → Board → Boards Manager**
+   - Search for: `esp32` by **Espressif Systems**
+   - Install the latest version.
+
+2. Install required libraries:
+   - **Library Manager → Search and install:**
+     - `TFT_eSPI` by **Bodmer**
+       - You must configure it for the LilyGO T-Display board (e.g. `Setup25_TTGO_T_Display.h`)
+     - `Crypto` (any library that provides `SHA256` support, e.g., Arduino `Crypto` or `Arduino_Crypto`)
+
+---
+
+## Files
+
+- `BIP39dice.ino` – the main sketch.
+
+---
+
+Stay tuned for the YouTube link and further development.
